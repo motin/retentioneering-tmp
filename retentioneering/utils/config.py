@@ -8,8 +8,8 @@ from dataclasses import asdict, field
 from pathlib import Path
 from typing import Type
 
-from pydantic import BaseConfig
-from pydantic.dataclasses import dataclass
+from pydantic.v1 import BaseConfig
+from pydantic.v1.dataclasses import dataclass
 
 from retentioneering.utils.hwid import get_hwid  # type: ignore
 

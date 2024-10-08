@@ -8,7 +8,7 @@ from typing import Any, List, Optional, cast
 import networkx
 import pandas as pd
 from IPython.core.display import HTML, DisplayHandle, display
-from pydantic import ValidationError
+from pydantic.v1 import ValidationError
 
 from retentioneering import RETE_CONFIG
 from retentioneering.backend import JupyterServer, ServerManager
