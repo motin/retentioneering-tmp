@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import List
 
 import pandas as pd
-from pydantic.dataclasses import dataclass
+from pydantic.v1.dataclasses import dataclass
 
 from retentioneering.backend.tracker import track
 from retentioneering.data_processor import DataProcessor

@@ -3,7 +3,7 @@ from typing import Any, Callable, Dict, List, Optional, Union
 
 import numpy as np
 import pandas as pd
-from pydantic.dataclasses import dataclass
+from pydantic.v1.dataclasses import dataclass
 
 from retentioneering.backend.tracker import collect_data_performance, time_performance
 from retentioneering.data_processor import DataProcessor

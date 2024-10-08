@@ -5,7 +5,7 @@ from collections.abc import Iterable
 from dataclasses import asdict
 from typing import TYPE_CHECKING, Any, Callable, Dict, Optional, Type, Union
 
-from pydantic import BaseModel, ValidationError, validator
+from pydantic.v1 import BaseModel, ValidationError, validator
 from typing_extensions import TypedDict
 
 from retentioneering.exceptions.widget import WidgetParseError
@@ -14,7 +14,7 @@ from retentioneering.utils.dict import clear_dict
 from retentioneering.widget import WIDGET_MAPPING
 
 if TYPE_CHECKING:
-    from pydantic.typing import AbstractSetIntStr, MappingIntStrAny
+    from pydantic.v1.typing import AbstractSetIntStr, MappingIntStrAny
 
 
 class CustomWidgetProperties(TypedDict):
